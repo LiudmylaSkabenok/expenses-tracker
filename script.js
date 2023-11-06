@@ -6,6 +6,7 @@ const accountTracker = {
 
     addExpenses: function () {
     this.expenses.push();
+    //return 
     //do we need to return here smth and do we need to call the function;
     },
 
@@ -15,10 +16,14 @@ const accountTracker = {
     },
 
     listAllExpenses: function () {
-    for (let i = 0; i < this.expenses.length; i++);
+    //for (let i = 0; i < this.expenses.length; i++) {
+     //   this.expenses.push(this.listAllExpenses[i]);
+    //}
 
-    //this.expenses.forEach(function() => console.log(element));
-    //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+    this.expenses.forEach(function() {
+        this.expenses.push();
+    });
+    
    // code from the site above do we need to return here smth and do we need to call the function;
     },
 
@@ -84,3 +89,5 @@ const accountTracker = {
 
 menu();
 
+// For me it doesn't matter what statement to use "switch" or "if/else" only if we use "if/else' we need to use let (not const)
+//variable
